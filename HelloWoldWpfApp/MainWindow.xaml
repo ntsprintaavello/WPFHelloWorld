@@ -1,0 +1,27 @@
+﻿<Window x:Class="HelloWoldWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWoldWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="LabelStyle1"/>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="LblNombre" Content="Nombre:&#xA;" HorizontalAlignment="Left" Margin="30,116,0,0" VerticalAlignment="Top" Height="35" Width="72"/>
+        <TextBox x:Name="TxtApellido" HorizontalAlignment="Left" Margin="109,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderThickness="4,4,4,4"/>
+        <TextBox x:Name="TxtNombre" HorizontalAlignment="Left" Margin="108,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="27" BorderThickness="4,4,4,4"/>
+        <Label x:Name="LblApellidos" Content="Apellidos:" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="LblDireccion" Content="DirecciOn:" HorizontalAlignment="Left" Margin="29,191,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtDireccion" HorizontalAlignment="Left" Margin="109,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" BorderThickness="4,4,4,4" Height="80"/>
+        <Button x:Name="BtnMostrar" Content="Mostrar" HorizontalAlignment="Left" Margin="41,305,0,0" VerticalAlignment="Top" Height="20" Width="70" Click="mostrar"/>
+        <Label x:Name="LblRespuesta" Content="" HorizontalAlignment="Left" Margin="142,299,0,0" VerticalAlignment="Top" Height="53" Width="381"/>
+        <Label Style="{DynamicResource LabelStyle1}" x:Name="LblDatosPersonales" Content="DATOS PERSONALES" HorizontalAlignment="Left" Margin="150,54,0,0" VerticalAlignment="Top" Height="39" Width="350" FontWeight="Bold" ToolTip="TItulo del Form" FontStyle="Oblique" FontStretch="SemiCondensed">
+        </Label>
+        <Calendar x:Name="CalFechaNacimiento" HorizontalAlignment="Left" Margin="546,112,0,0" VerticalAlignment="Top" ScrollViewer.HorizontalScrollBarVisibility="Visible" Cursor="Arrow"/>
+        <Label x:Name="LbLFechaNacimiento" Content="Fecha de Nacimiento:" HorizontalAlignment="Left" Margin="414,116,0,0" VerticalAlignment="Top" Height="27" Width="123"/>
+
+    </Grid>
+</Window>
